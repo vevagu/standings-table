@@ -6,7 +6,7 @@ const standingsData = [
     { team: "Unity FC", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
     { team: "DM United ", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
     { team: "Tsa98red ", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
-    { team: "Blue Angels - Women C", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
+    { team: "Blue Angels", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
     { team: "Indomitable Lions", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
     { team: "Infinity", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
     { team: "Amigos", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
