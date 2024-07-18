@@ -1,4 +1,5 @@
 // Data for Tournament would be updated here
+document.addEventListener('DOMContentLoaded', function() {
 const standingsData = [
     { team: "Leopards FC", played: 0, won: 0, drawn: 0, lost: 0, points: 0 },
     { team: "Phantom FC", played: 0, won: 0, drawn: 0, lost: 0, points: 0 },
@@ -22,19 +23,23 @@ const standingsData = [
     
 ];
 
-function updateStandingsTable() {
-    const tableBody = document.getElementById('standings-table-body');
-    tableBody.innerHTML = ''; // Clear existing rows
-
-    standingsData.forEach(row => {
-        const tr = document.createElement('tr');
-        Object.values(row).forEach(cellData => {
-            const td = document.createElement('td');
-            td.textContent = cellData;
-            tr.appendChild(td);
-        });
-        tableBody.appendChild(tr);
+const tableBody = document.getElementById('standings-table');
+    
+    data.forEach(item => {
+        const row = document.createElement('tr');
+        
+        row.innerHTML = `
+            <td class="team-name">${item.team}</td>
+            <td>${item.played}</td>
+            <td>${item.won}</td>
+            <td>${item.drawn}</td>
+            <td>${item.lost}</td>
+            <td>${item.gf}</td>
+            <td>${item.ga}</td>
+            <td>${item.gd}</td>
+            <td>${item.points}</td>
+        `;
+        
+        tableBody.appendChild(row);
     });
-}
-
-document.addEventListener('DOMContentLoaded', updateStandingsTable);
+});
